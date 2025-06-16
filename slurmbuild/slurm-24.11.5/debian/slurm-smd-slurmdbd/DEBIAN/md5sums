@@ -1,0 +1,7 @@
+cb1aaf0c5e7dd6b504ec2116cee0cf34  usr/lib/systemd/system/slurmdbd.service
+1b5d8d62ae4d19facac2ed0868f99437  usr/sbin/slurmdbd
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-slurmdbd/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-slurmdbd/copyright
+a9fae33ac9ae6eafb7d5f12c966ef938  usr/share/lintian/overrides/slurm-smd-slurmdbd
+3c505240be7d5e59988e748fc864c436  usr/share/man/man5/slurmdbd.conf.5.gz
+ff6ca0bd4afd2bdf002bd2328e28b946  usr/share/man/man8/slurmdbd.8.gz

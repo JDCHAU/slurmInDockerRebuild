@@ -1,0 +1,6 @@
+da14b077aee8afe56a7bff88639e408a  usr/lib/systemd/system/slurmctld.service
+ff496ce47eb1eb74be48752b6b297021  usr/sbin/slurmctld
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-slurmctld/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-slurmctld/copyright
+5da77c198ba658981b476d8981b50a5f  usr/share/lintian/overrides/slurm-smd-slurmctld
+b6a47a0dd4b71b5d58c7410c00f0f798  usr/share/man/man8/slurmctld.8.gz

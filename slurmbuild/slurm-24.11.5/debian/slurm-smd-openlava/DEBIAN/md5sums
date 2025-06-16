@@ -1,0 +1,6 @@
+817a0aa8174982d6fb9ebe6295d28d29  usr/bin/bjobs
+be3e91f0ed9a3d366ce29d64bef050a1  usr/bin/bkill
+867543d192c165daeeec2ab40c737f05  usr/bin/bsub
+fb3a1ee5c4127703fefe29d1b8bd3b2a  usr/bin/lsid
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-openlava/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-openlava/copyright

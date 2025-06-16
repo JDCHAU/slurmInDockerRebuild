@@ -1,0 +1,13 @@
+Package: slurm-smd-libnss-slurm
+Source: slurm-smd
+Version: 24.11.5-1
+Architecture: amd64
+Maintainer: SchedMD Support <support@schedmd.com>
+Installed-Size: 36
+Depends: libc6 (>= 2.38), slurm-smd (>= 24.11.5)
+Section: admin
+Priority: optional
+Homepage: http://slurm.schedmd.com
+Description: Slurm NSS plugin
+  This plugin can permit passwd, group, and cloud node host resolution for a job
+  to be serviced through the local slurmstepd process.

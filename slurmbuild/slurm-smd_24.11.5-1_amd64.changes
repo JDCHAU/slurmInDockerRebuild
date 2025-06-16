@@ -1,0 +1,129 @@
+Format: 1.8
+Date: Thu, 05 Jul 2024 17:14:32 -0400
+Source: slurm-smd
+Binary: slurm-smd slurm-smd-client slurm-smd-dev slurm-smd-doc slurm-smd-libnss-slurm slurm-smd-libpam-slurm-adopt slurm-smd-libpmi0 slurm-smd-libpmi2-0 slurm-smd-libslurm-perl slurm-smd-openlava slurm-smd-sackd slurm-smd-slurmctld slurm-smd-slurmd slurm-smd-slurmdbd slurm-smd-slurmrestd slurm-smd-sview slurm-smd-torque
+Built-For-Profiles: noudeb
+Architecture: amd64 all
+Version: 24.11.5-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: SchedMD Support <support@schedmd.com>
+Changed-By: Tim McMullan <mcmullan@schedmd.com>
+Description:
+ slurm-smd  - Slurm Workload Manager
+ slurm-smd-client - Slurm Workload Manager client commands.
+ slurm-smd-dev - Development package for Slurm-smd.
+ slurm-smd-doc - Slurm HTML documentation
+ slurm-smd-libnss-slurm - Slurm NSS plugin
+ slurm-smd-libpam-slurm-adopt - Slurm's pam_slurm_adopt module
+ slurm-smd-libpmi0 - Slurm PMI library implementation
+ slurm-smd-libpmi2-0 - Slurm PMI2 library implementation
+ slurm-smd-libslurm-perl - Perl API for Slurm
+ slurm-smd-openlava - OpenLava compatibility wrappers for Slurm
+ slurm-smd-sackd - Slurm authentication daemon.
+ slurm-smd-slurmctld - Slurm contoller daemon.
+ slurm-smd-slurmd - Slurm compute node daemon
+ slurm-smd-slurmdbd - Slurm database daemon.
+ slurm-smd-slurmrestd - Slurm REST API daemon
+ slurm-smd-sview - GUI to view or modify Slurm state information.
+ slurm-smd-torque - Torque compatibility wrappers for Slurm
+Changes:
+ slurm-smd (24.11.5-1) UNRELEASED; urgency=medium
+ .
+   * Initial release.
+Checksums-Sha1:
+ d9eb02199c36d3ef6f373c2ad33e82b3e9194259 1457812 slurm-smd-client-dbgsym_24.11.5-1_amd64.ddeb
+ b1d218d11fe0cb5ac68bdda2fd51b9a7c6fd44e4 739340 slurm-smd-client_24.11.5-1_amd64.deb
+ 256170dc7cbe2c59806c27dee1ad1b8bb3e094fa 9196638 slurm-smd-dbgsym_24.11.5-1_amd64.ddeb
+ fe9abfa874e9572a2c78f09c64a5781e3dfec327 23289952 slurm-smd-dev_24.11.5-1_amd64.deb
+ 75eef68c180f20a153cc72b6d717fb252e34ba69 2015384 slurm-smd-doc_24.11.5-1_all.deb
+ 243d2ce7779104a3a82b78ca8dce30d05fd81f40 15330 slurm-smd-libnss-slurm-dbgsym_24.11.5-1_amd64.ddeb
+ 340efc82b1965795cc0e8db7bc44bd62c4f21bba 6908 slurm-smd-libnss-slurm_24.11.5-1_amd64.deb
+ 1b91cbd8217de30354095d5eb7921bfe2aa615a0 22638 slurm-smd-libpam-slurm-adopt-dbgsym_24.11.5-1_amd64.ddeb
+ 1ebc81e520a2ad6ed971dce2dd07f2f687486781 10980 slurm-smd-libpam-slurm-adopt_24.11.5-1_amd64.deb
+ 16bb39ab38fb4e7f059799012148d9fd72818b1d 26408 slurm-smd-libpmi0-dbgsym_24.11.5-1_amd64.ddeb
+ 6031aa25b1b985a3a01de53b0940d497f1c9bf37 11934 slurm-smd-libpmi0_24.11.5-1_amd64.deb
+ 0fe2669ec52b79016cbca8b4ed0598f2cd078145 42868 slurm-smd-libpmi2-0-dbgsym_24.11.5-1_amd64.ddeb
+ 8728e7b98dcbaf0a8732ac2642dc41ea07645027 15614 slurm-smd-libpmi2-0_24.11.5-1_amd64.deb
+ b4b860ff7ee075fdff2cb7105b16360dc92dea04 488090 slurm-smd-libslurm-perl-dbgsym_24.11.5-1_amd64.ddeb
+ d2c70e73b1cf982f3cc4bd2fadb7e90d5b97e66c 149074 slurm-smd-libslurm-perl_24.11.5-1_amd64.deb
+ 7abec84efad889d79874c9a8c6f4ffc29400d8c1 7300 slurm-smd-openlava_24.11.5-1_all.deb
+ 08bc730e0989cae39da3743702ce9939a813afa3 30184 slurm-smd-sackd-dbgsym_24.11.5-1_amd64.ddeb
+ c5175fa97618ef776325239c65d8d640f0f00a34 12798 slurm-smd-sackd_24.11.5-1_amd64.deb
+ a1fe6cdd682e60d7aced8a66001b5c6e62508a3f 1288608 slurm-smd-slurmctld-dbgsym_24.11.5-1_amd64.ddeb
+ f116b908c5ade0c9bcae232d800a7061cdcb5bcb 512208 slurm-smd-slurmctld_24.11.5-1_amd64.deb
+ 9ab1525a68eda7d12939ccf19bdc8c2ef9dd4782 816984 slurm-smd-slurmd-dbgsym_24.11.5-1_amd64.ddeb
+ 706fcfb6bc3aade2f262ae046262cc29a11ce886 249348 slurm-smd-slurmd_24.11.5-1_amd64.deb
+ 1a763ccc73677b065026f46e98db5b5439fe3826 115838 slurm-smd-slurmdbd-dbgsym_24.11.5-1_amd64.ddeb
+ 8f9420dbb32359672f0bb890cd6aa4fb1c8037de 48128 slurm-smd-slurmdbd_24.11.5-1_amd64.deb
+ 7d1cc4c4d02b9ddae638ae21f970a87763502a5f 90920 slurm-smd-slurmrestd-dbgsym_24.11.5-1_amd64.ddeb
+ e10327928f35efa5ed2235502bbfe3214ead3639 39762 slurm-smd-slurmrestd_24.11.5-1_amd64.deb
+ fb8d12e6c084ce7467c936b3ce843aec82a654f5 319740 slurm-smd-sview-dbgsym_24.11.5-1_amd64.ddeb
+ da988b8e1bbd53657573a9eea1d5424ba937f75b 115520 slurm-smd-sview_24.11.5-1_amd64.deb
+ f2acdfa4cb8aea448183ec717490c781471ad904 26870 slurm-smd-torque_24.11.5-1_all.deb
+ cbfd6e8c0b1fddbefb42883a4366b2407032c233 25273 slurm-smd_24.11.5-1_amd64.buildinfo
+ ccdc2fd1b67366f031b7cc77d3a7de864a592003 2669220 slurm-smd_24.11.5-1_amd64.deb
+Checksums-Sha256:
+ 06a4d93b1a1df4d1803af460b82461e4aaf27bf0b3536a2f49c9eecbc10a89fd 1457812 slurm-smd-client-dbgsym_24.11.5-1_amd64.ddeb
+ 1a58641b8574f248a1a9b65fb485429e8ef27cee007d9fc6509cff8382ada7bf 739340 slurm-smd-client_24.11.5-1_amd64.deb
+ 2d82f5787fc28526582282d77af312ca4ba3774991f702238b53337079f0ad59 9196638 slurm-smd-dbgsym_24.11.5-1_amd64.ddeb
+ dd0505e2a2296d17dbf038b2f992fdde4fb28a5428d2a7289fc8c8d02d7fa378 23289952 slurm-smd-dev_24.11.5-1_amd64.deb
+ c15cb6577ebea9b961d356ce35c754c5d04f90bbd3883e08cbf092c42f8e8302 2015384 slurm-smd-doc_24.11.5-1_all.deb
+ 251f535b6bbf4407fb25f7ba56a7855702b853e8ce8672d776684a4e5d772a2d 15330 slurm-smd-libnss-slurm-dbgsym_24.11.5-1_amd64.ddeb
+ 06ad88d25276bbdcd746f132df4b35c11da0d177bd7e7228a2873368a0a97e9b 6908 slurm-smd-libnss-slurm_24.11.5-1_amd64.deb
+ 363da063be8b172e97661ae7803aefede05acde9ae87186380f374eaf996b25e 22638 slurm-smd-libpam-slurm-adopt-dbgsym_24.11.5-1_amd64.ddeb
+ 43e33d1f5bd27e41a0c63ad242668312377641a48224126f82ae49c1b1caf973 10980 slurm-smd-libpam-slurm-adopt_24.11.5-1_amd64.deb
+ 5b0a5dbe97056b2061956769c5249225afbf95b231a4f18b06d5d63fbf26facc 26408 slurm-smd-libpmi0-dbgsym_24.11.5-1_amd64.ddeb
+ de726bf70d913a4512dadc82e4e294ea67068f3af37b704eb0fb7573b62a436f 11934 slurm-smd-libpmi0_24.11.5-1_amd64.deb
+ 4deac24dad3c01cd12ec6e4247b2b52d99c28bc1c17a59e95a9c20b1be994ee0 42868 slurm-smd-libpmi2-0-dbgsym_24.11.5-1_amd64.ddeb
+ afcd8989a00b49c6b125dc93ae31270263bfe49a26c8a7e60813af23edb7739f 15614 slurm-smd-libpmi2-0_24.11.5-1_amd64.deb
+ 6b1f67604422bc52f99b76c4924e01866df90065657de26d88cfcee463db7bac 488090 slurm-smd-libslurm-perl-dbgsym_24.11.5-1_amd64.ddeb
+ e86df6bb78608ef0982aa70e423b6a243455440ebf3dfdbb97632a47ccc6d54f 149074 slurm-smd-libslurm-perl_24.11.5-1_amd64.deb
+ c03d63106f4b65d18b9fb37b1d30fed070fe8fed5e624eba7a628edbb742399c 7300 slurm-smd-openlava_24.11.5-1_all.deb
+ be05c7352920dff15441799b2f4e5152bdf0a059114f85cc7d67ef8ddf8eef4f 30184 slurm-smd-sackd-dbgsym_24.11.5-1_amd64.ddeb
+ 0c06d336300b1df11ff1de1461e0aa4c33a6329aeef4fe3d8c2afea24870fb8e 12798 slurm-smd-sackd_24.11.5-1_amd64.deb
+ 62aaf4aa169d5de63857696f3086f3f967251de424241944e96f8360e896f5c1 1288608 slurm-smd-slurmctld-dbgsym_24.11.5-1_amd64.ddeb
+ de912898a4e670e3722ff57e8c568d762e1c7aa87afa402daed6ab180a4d94fb 512208 slurm-smd-slurmctld_24.11.5-1_amd64.deb
+ 9ab841cf36c918a005804d859ce3142307e60743371234430e3872dcc92b3d56 816984 slurm-smd-slurmd-dbgsym_24.11.5-1_amd64.ddeb
+ 9c39407fe4535c540cc908f6f032917afac364f50f28d03ee8730ceab3e658db 249348 slurm-smd-slurmd_24.11.5-1_amd64.deb
+ f8a0b6fb059b8564c9e77dce9ddfde5a7a4076a8247974b23381ebae0144e619 115838 slurm-smd-slurmdbd-dbgsym_24.11.5-1_amd64.ddeb
+ 20348b7783d415968461b2baf14b867c9d4f78fb1ae2c70b59986faaf1dd0737 48128 slurm-smd-slurmdbd_24.11.5-1_amd64.deb
+ c7cf81654d839ece78f6b1351451489af8152d00d16910f5c1af1a3f16928121 90920 slurm-smd-slurmrestd-dbgsym_24.11.5-1_amd64.ddeb
+ e593366031fec1bf04d5613389f6257f040086dc0531112b74092252d04c7a2d 39762 slurm-smd-slurmrestd_24.11.5-1_amd64.deb
+ a4ccfa8029ce8f24319c89611d1bc7089d315987c35f88804c50fc0babbbc349 319740 slurm-smd-sview-dbgsym_24.11.5-1_amd64.ddeb
+ d57da6c3dcb6cd01c4bab53d4494d823233cc2625eed6406d593a4c686c35bf0 115520 slurm-smd-sview_24.11.5-1_amd64.deb
+ fc339d3bfdcd03d8bae776601de5eb498243a338cd190bddc7122183b451fa9a 26870 slurm-smd-torque_24.11.5-1_all.deb
+ 85c5f9d8f3b958661e96d05754d6cd511f8dcf8369c78cf63cfa260472c3bb8f 25273 slurm-smd_24.11.5-1_amd64.buildinfo
+ a44cfd867eaabfa07eeadd85aa917f091bf2360ae2e3b99b71802f0c1720bfa0 2669220 slurm-smd_24.11.5-1_amd64.deb
+Files:
+ a351f1dfb07bcab77b3a8e8c3a15fb53 1457812 debug optional slurm-smd-client-dbgsym_24.11.5-1_amd64.ddeb
+ 7cae855c0a28b73a87a52a70ee239b6a 739340 admin optional slurm-smd-client_24.11.5-1_amd64.deb
+ 2ee5acf923a2fab121275a9d185015de 9196638 debug optional slurm-smd-dbgsym_24.11.5-1_amd64.ddeb
+ 5a1d2f0cb54b037d10a9760341231aa9 23289952 admin optional slurm-smd-dev_24.11.5-1_amd64.deb
+ c5e4807a8974cb567113d2b25efd9786 2015384 doc optional slurm-smd-doc_24.11.5-1_all.deb
+ a96942a8bc0e5d085cedc7aad9efa8b6 15330 debug optional slurm-smd-libnss-slurm-dbgsym_24.11.5-1_amd64.ddeb
+ e90c867d991abb5c311fab13ff8d00f9 6908 admin optional slurm-smd-libnss-slurm_24.11.5-1_amd64.deb
+ 5c109a6b85642d4f13f6607a805b8901 22638 debug optional slurm-smd-libpam-slurm-adopt-dbgsym_24.11.5-1_amd64.ddeb
+ 92ec4cdf12fb36a15232b5366482a2db 10980 admin optional slurm-smd-libpam-slurm-adopt_24.11.5-1_amd64.deb
+ b36b160650227d526f9f075ef5d439dc 26408 debug optional slurm-smd-libpmi0-dbgsym_24.11.5-1_amd64.ddeb
+ bffc66536cdbceec08f6a0d236d59804 11934 libs optional slurm-smd-libpmi0_24.11.5-1_amd64.deb
+ c74be368a2426ca1b02f1bfbdd098db7 42868 debug optional slurm-smd-libpmi2-0-dbgsym_24.11.5-1_amd64.ddeb
+ 7e4f00f87e7e02c479d4abd643cf5b27 15614 libs optional slurm-smd-libpmi2-0_24.11.5-1_amd64.deb
+ 8cd29bfdde44e9ca362ee51766e14fcf 488090 debug optional slurm-smd-libslurm-perl-dbgsym_24.11.5-1_amd64.ddeb
+ 157a3e65db623b9538071b4807a20be7 149074 perl optional slurm-smd-libslurm-perl_24.11.5-1_amd64.deb
+ 21e58dde273cf8ca8f788ce6ffa2e6ee 7300 admin optional slurm-smd-openlava_24.11.5-1_all.deb
+ c07817cf7ae0cc87044017fb55a943c7 30184 debug optional slurm-smd-sackd-dbgsym_24.11.5-1_amd64.ddeb
+ 43177029ea7184ec83e281ec94becd03 12798 admin optional slurm-smd-sackd_24.11.5-1_amd64.deb
+ 052e83a1f04838724645cd6d514ab7f3 1288608 debug optional slurm-smd-slurmctld-dbgsym_24.11.5-1_amd64.ddeb
+ 2d1d76a89925bd7a9a3be2d764454842 512208 admin optional slurm-smd-slurmctld_24.11.5-1_amd64.deb
+ 985c427d206de4b9004bd3ea670f92d7 816984 debug optional slurm-smd-slurmd-dbgsym_24.11.5-1_amd64.ddeb
+ e367b78f7d171c514ae5e00bbe178496 249348 admin optional slurm-smd-slurmd_24.11.5-1_amd64.deb
+ 3594850beade842f55d518d196653e27 115838 debug optional slurm-smd-slurmdbd-dbgsym_24.11.5-1_amd64.ddeb
+ 6f527223fdebfef0385c7f0dd1702bf9 48128 admin optional slurm-smd-slurmdbd_24.11.5-1_amd64.deb
+ 48f91ebd1183789afb18cbb119843652 90920 debug optional slurm-smd-slurmrestd-dbgsym_24.11.5-1_amd64.ddeb
+ 0db964f46b02c7ca8074cb5e7f64932b 39762 admin optional slurm-smd-slurmrestd_24.11.5-1_amd64.deb
+ 8efba97ac92d41795244ff8cc20780a2 319740 debug optional slurm-smd-sview-dbgsym_24.11.5-1_amd64.ddeb
+ 4731db452fd199c25b6daf143f687d9a 115520 admin optional slurm-smd-sview_24.11.5-1_amd64.deb
+ 382a4539ba3609c8434a96b3b5286ec2 26870 admin optional slurm-smd-torque_24.11.5-1_all.deb
+ 77b1ab2b34de4e84c40ddcdbd65f06ef 25273 admin optional slurm-smd_24.11.5-1_amd64.buildinfo
+ c65b871bcfed146c417bed39c6b4a11f 2669220 admin optional slurm-smd_24.11.5-1_amd64.deb

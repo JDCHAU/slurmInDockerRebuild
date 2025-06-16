@@ -1,0 +1,5 @@
+05bd99f38e1ca58da3ff260d5afacbf8  usr/bin/sview
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-sview/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-sview/copyright
+b22eb9a49732313e8f1f9bfbe397fc17  usr/share/lintian/overrides/slurm-smd-sview
+32ec25bc8ab74cd040f71803882817bc  usr/share/man/man1/sview.1.gz

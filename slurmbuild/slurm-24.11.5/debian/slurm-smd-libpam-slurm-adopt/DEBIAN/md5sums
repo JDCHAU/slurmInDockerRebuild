@@ -1,0 +1,4 @@
+7b7b8b31415e46a0bf50aa5b7b1672bd  lib/security/pam_slurm_adopt.so
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-libpam-slurm-adopt/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-libpam-slurm-adopt/copyright
+b22eb9a49732313e8f1f9bfbe397fc17  usr/share/lintian/overrides/slurm-smd-libpam-slurm-adopt

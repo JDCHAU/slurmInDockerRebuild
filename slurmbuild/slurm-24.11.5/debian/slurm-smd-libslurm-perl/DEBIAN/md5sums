@@ -1,0 +1,15 @@
+76500b84df4d64171fbfceb73e17cf69  usr/lib/x86_64-linux-gnu/perl/5.38.2/Slurm.pm
+cebd0ae355333c2b3eedae7ef3000fa8  usr/lib/x86_64-linux-gnu/perl/5.38.2/Slurm/Bitstr.pm
+35bec94eecf97a139e75b95acc794771  usr/lib/x86_64-linux-gnu/perl/5.38.2/Slurm/Constant.pm
+fd0654477bb859f28cdbb4ec4d8677fa  usr/lib/x86_64-linux-gnu/perl/5.38.2/Slurm/Hostlist.pm
+27e37647833617ecb3d79f176fb294bf  usr/lib/x86_64-linux-gnu/perl/5.38.2/Slurmdb.pm
+e02ea6f86ba2a107a9d5280540c12161  usr/lib/x86_64-linux-gnu/perl/5.38.2/auto/Slurm/Slurm.so
+bc41ed21cfa4ce66c480112e4a287873  usr/lib/x86_64-linux-gnu/perl/5.38.2/auto/Slurmdb/Slurmdb.so
+dce3451642bdfc94764c375db702f782  usr/lib/x86_64-linux-gnu/perl/5.38.2/auto/Slurmdb/autosplit.ix
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-libslurm-perl/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-libslurm-perl/copyright
+d8d575643f04b97688cbb5d9a55a57ba  usr/share/man/man3/Slurm.3pm.gz
+b8bccf3e4c305cf01bd5f2fd5c207e77  usr/share/man/man3/Slurm::Bitstr.3pm.gz
+c350f011d4e51e5dcebf9f6fed56bbb8  usr/share/man/man3/Slurm::Constant.3pm.gz
+9079aa636dfd2087c99c95927c87e03a  usr/share/man/man3/Slurm::Hostlist.3pm.gz
+2dc148a9daf6b6458e2ab949bc0b9221  usr/share/man/man3/Slurmdb.3pm.gz

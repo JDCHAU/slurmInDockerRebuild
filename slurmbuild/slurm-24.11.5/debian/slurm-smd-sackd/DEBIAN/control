@@ -1,0 +1,13 @@
+Package: slurm-smd-sackd
+Source: slurm-smd
+Version: 24.11.5-1
+Architecture: amd64
+Maintainer: SchedMD Support <support@schedmd.com>
+Installed-Size: 52
+Depends: slurm-smd (= 24.11.5-1), libc6 (>= 2.34)
+Section: admin
+Priority: optional
+Homepage: http://slurm.schedmd.com
+Description: Slurm authentication daemon.
+ Used on login nodes that are not running slurmd daemons to allow authentication
+ to the cluster.

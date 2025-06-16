@@ -1,0 +1,13 @@
+Package: slurm-smd-client
+Source: slurm-smd
+Version: 24.11.5-1
+Architecture: amd64
+Maintainer: SchedMD Support <support@schedmd.com>
+Installed-Size: 2015
+Depends: libc6 (>= 2.38), libhdf5-103-1t64, libhdf5-hl-100t64, liblua5.3-0, liblz4-1 (>= 0.0~r130), libreadline8t64 (>= 6.0), slurm-smd (= 24.11.5-1), munge, bash-completion
+Conflicts: slurm-client, slurm-client-emulator
+Section: admin
+Priority: optional
+Homepage: http://slurm.schedmd.com
+Description: Slurm Workload Manager client commands.
+ This package contains the Slurm client commands (excluding sview).

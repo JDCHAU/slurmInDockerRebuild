@@ -1,0 +1,12 @@
+Package: slurm-smd-libpmi0
+Source: slurm-smd
+Version: 24.11.5-1
+Architecture: amd64
+Maintainer: SchedMD Support <support@schedmd.com>
+Installed-Size: 45
+Depends: slurm-smd (= 24.11.5-1), libc6 (>= 2.38)
+Section: libs
+Priority: optional
+Homepage: http://slurm.schedmd.com
+Description: Slurm PMI library implementation
+  The Slurm PMI library.

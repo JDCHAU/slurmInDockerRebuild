@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Slurm Workload Manager - Release Notes</title>
+	<link rel="canonical" href="https://slurm.schedmd.com/release_notes.html">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slurm.css">
+
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('.menu-trigger').bind('click touchstart', function() {
+			jQuery(this).find('.menu-trigger__lines').toggleClass('menu-trigger__lines--closed');
+			jQuery(this).parents('.site-header').find('.site-nav').toggleClass('site-nav--active');
+
+			return false;
+		});
+	});
+	</script>
+	<script async src="https://cse.google.com/cse.js?cx=011890816164765777536:jvrtxrd3f0w"></script>
+</head>
+
+<body>
+
+<div class="container container--main">
+
+	<header class="site-header" role="banner">
+
+		<div class="site-masthead">
+			<h1 class="site-masthead__title site-masthead__title--slurm">
+				<a href="/" rel="home">
+					<span class="slurm-logo">Slurm Workload Manager</span>
+				</a>
+			</h1>
+			<div class="site-masthead__title">
+				<a href="https://www.schedmd.com/" rel="home">
+					<span class="site-logo">SchedMD</span>
+				</a>
+			</div>
+
+			<button class="site-masthead__trigger menu-trigger" type="button" role="button" aria-label="Toggle Navigation"><span class="menu-trigger__lines"></span></button>
+		</div>
+
+
+		<nav class="site-nav" role="navigation">
+			<h2 class="site-nav__title">Navigation</h2>
+
+			<div class="slurm-title">
+				<div class="slurm-logo"><a href="/">Slurm Workload Manager</a></div>
+				<div class="slurm-title__version">Version 24.11</div>
+			</div>
+
+			<ul class="site-nav__menu site-menu menu">
+				<li class="site-menu__item">
+				        <div>About</div>
+					<ul>
+						<li><a href="overview.html">Overview</a></li>
+						<li><a href="release_notes.html">Release Notes</a></li>
+					</ul>
+				</li>
+				<li class="site-menu__item">
+					<div>Using</div>
+					<ul>
+						<li><a href="documentation.html">Documentation</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="https://www.schedmd.com/publications/">Publications</a></li>
+					</ul>
+				</li>
+				<li class="site-menu__item">
+					<div>Installing</div>
+					<ul>
+						<li><a href="https://www.schedmd.com/download-slurm/">Download</a></li>
+						<li><a href="related_software.html">Related Software</a></li>
+						<li><a href="quickstart_admin.html">Installation Guide</a></li>
+					</ul>
+				</li>
+				<li class="site-menu__item">
+					<div>Getting Help</div>
+					<ul>
+						<li><a href="mail.html">Mailing Lists</a></li>
+						<li><a href="https://www.schedmd.com/slurm-support/our-services/">Support and Training</a></li>
+						<li><a href="troubleshoot.html">Troubleshooting</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<div class="content" role="main">
+		<section class="slurm-search">
+			<div class="container" id="cse">
+				<gcse:search></gcse:search>
+			</div>
+		</section>
+
+		<div class="section">
+			<div class="container">
+
+
+<h1>Release Notes</h1>
+
+<p>
+The following are the contents of the <i>RELEASE_NOTES</i> file as distributed
+with the Slurm source code for this release. Please refer to the NEWS include
+alongside the source as well for more detailed descriptions of the associated
+changes, and for bugs fixed within each maintenance release.
+</p>
+<pre>
+RELEASE NOTES FOR SLURM VERSION 24.11
+
+IMPORTANT NOTES:
+If using the slurmdbd (Slurm DataBase Daemon) you must update this first.
+
+NOTE: If using a backup DBD you must start the primary first to do any
+database conversion, the backup will not start until this has happened.
+
+The 24.05 slurmdbd will work with Slurm daemons of version 23.02 and above.
+You will not need to update all clusters at the same time, but it is very
+important to update slurmdbd first and having it running before updating
+any other clusters making use of it.
+
+Slurm can be upgraded from version 23.02, 23.11 or 24.05 to version
+24.11 without loss of jobs or other state information. Upgrading directly from
+an earlier version of Slurm will result in loss of state information.
+
+All SPANK plugins must be recompiled when upgrading from any Slurm version
+prior to 24.11.
+
+HIGHLIGHTS
+==========
+ -- Add report AccountUtilizationByQOS to sreport.
+ -- AccountUtilizationByUser is able to be filtered by QOS.
+ -- Add autodetected gpus to the output of slurmd -C
+ -- Add ability to submit jobs with multiple QOS. These are sorted by priority
+    highest being the first.
+ -- Removed the instant on feature from switch/hpe_slingshot.
+ -- slurmctld - Changed incoming RPC handling to dedicated thread pool with
+    asynchronous handling of I/O that can be configured via conmgr_* entries
+    under SlurmctldParameters in slurm.conf.
+
+
+CONFIGURATION FILE CHANGES (see appropriate man page for details)
+=====================================================================
+ -- Add SchedulerParameters=bf_allow_magnetic_slot option. It allows jobs in
+    magnetic reservations to be planned by backfill scheduler.
+ -- Add TopologyParam=TopoMaxSizeUnroll=# to allow --nodes=<min>-<max> for
+    topology/block.
+ -- Add DataParserParameters slurm.conf parameter to allow setting default
+    value for CLI --json and --yaml arguments.
+ -- Hardware collectives in switch/hpe_slingshot now requires enable_stepmgr.
+ -- Added connection related parameters to slurm.conf under SlurmctldParameters:
+	conmgr_max_connections: Defaults to 150 connections.
+	conmgr_threads: Defaults to 64 threads for slurmctld.
+	conmgr_use_poll: Defaults is to use epoll in Linux.
+	conmgr_connect_timeout: Defaults to MessageTimeout.
+	conmgr_read_timeout: Defaults to MessageTimeout.
+	conmgr_wait_write_delay: Defaults to MessageTimeout.
+	conmgr_write_timeout: Defaults to MessageTimeout.
+ -- Add SlurmctldParamters=ignore_constraint_validation to ignore
+    constraint/feature validation at submission.
+ -- Add SchedulerParameters=bf_topopt_enable option to enable experimental hook
+    to control backfill.
+
+COMMAND CHANGES (see man pages for details)
+===========================================
+ -- Remove srun --cpu-bind=rank.
+ -- Add "%b" as a file name pattern for the array task id modulo 10.
+ -- sacct - Respect --noheader for --batch-script and --env-vars.
+ -- Add "sacctmgr ping" command to query status of slurmdbd.
+ -- sbcast - Add --nodelist option to specify where files are transmitted to
+ -- sbcast - Add --no-allocation option to transmit files to nodes outside of a
+    job allocation
+ -- slurmdbd - Add -u option. This is used to determine if restarting the DBD
+    will result in database conversion.
+ -- Remove salloc --get-user-env.
+ -- scontrol - Add --json/--yaml support to listpids
+ -- scontrol - Add liststeps
+ -- scontrol - Add listjobs
+ -- scontrol show topo - Show aggregated block sizes when using topology/block.
+
+API CHANGES
+===========
+ -- Remove burst_buffer/lua call slurm.job_info_to_string().
+ -- job_submit/lua - Add "assoc_qos" attribute to job_desc to display all
+    potential QOS's for a job's association.
+ -- job_submit/lua - Add slurm.get_qos_priority() function to retrieve the
+    given QOS's priority.
+
+SLURMRESTD CHANGES
+==================
+ -- Removed fields deprecated in the Slurm-23.11 release from v0.0.42 endpoints.
+ -- Removed v0.0.39 plugins.
+ -- Set data_parser/v0.0.42+prefer_refs flag to default.
+ -- Add data_parser/v0.0.42+minimize_refs flag to inline single referenced
+    schemas in the OpenAPI schema to get default behavior of
+    data_parser/v0.0.41.
+ -- Rename v0.0.42 JOB_INFO field "minimum_switches" to "required_switches"
+    to reflect the actual behavior.
+ -- Rename v0.0.42 ACCOUNT_CONDITION field "assocation" to "association" (typo).
+ -- Tag slurmdb/v0.0.42/jobs pid field deprecated.
+
+</pre>
+			</div> <!-- END .container -->
+		</div> <!-- END .section -->
+	</div> <!-- END .content -->
+</div> <!-- END .main -->
+
+</body>
+</html>
+

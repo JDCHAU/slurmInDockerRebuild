@@ -1,0 +1,4 @@
+2d93f805449e09b8488b7eeb6f08a822  usr/lib/x86_64-linux-gnu/libpmi2.so.0.0.0
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-libpmi2-0/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-libpmi2-0/copyright
+b22eb9a49732313e8f1f9bfbe397fc17  usr/share/lintian/overrides/slurm-smd-libpmi2-0

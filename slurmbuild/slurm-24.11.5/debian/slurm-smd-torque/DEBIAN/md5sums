@@ -1,0 +1,15 @@
+fc2f00b6482934cabb972afd59ffd5d5  usr/bin/generate_pbs_nodefile
+73a35ebd9cdb8d35c3226642ae7c359f  usr/bin/mpiexec
+bda24391fe9d8324e44a37c6e1c2c304  usr/bin/pbsnodes
+08740d77983c8d967ae1a9586f970ca8  usr/bin/qalter
+17d4efc4ad3909d81a3d57d1ee46847d  usr/bin/qdel
+c4589285218af5c5cf5d09b058cc75ac  usr/bin/qhold
+9334a23611364e3a7b2748b4119db8d8  usr/bin/qrerun
+62e161d271f0b4e6651c9fc49397801c  usr/bin/qrls
+d0a9b37e223ae4af072762db728e24d7  usr/bin/qstat
+bc5197e56413a163492dcefe2efa8c9f  usr/bin/qsub
+8e8012e31e19ecef1161277568abd844  usr/lib/debug/.dwz/x86_64-linux-gnu/slurm-smd-torque.debug
+8c1003ad31b184184fe12bd4b5329972  usr/lib/x86_64-linux-gnu/slurm/job_submit_pbs.so
+a68d087be824652982f452a6e430e974  usr/lib/x86_64-linux-gnu/slurm/spank_pbs.so
+498edb788943d795e9e3493095041e7f  usr/share/doc/slurm-smd-torque/changelog.Debian.gz
+159822a2e38748f23eb0808a3a5d76e4  usr/share/doc/slurm-smd-torque/copyright

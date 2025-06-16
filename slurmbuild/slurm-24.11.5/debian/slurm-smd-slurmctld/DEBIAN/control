@@ -1,0 +1,14 @@
+Package: slurm-smd-slurmctld
+Source: slurm-smd
+Version: 24.11.5-1
+Architecture: amd64
+Maintainer: SchedMD Support <support@schedmd.com>
+Installed-Size: 1264
+Depends: libc6 (>= 2.38), slurm-smd (= 24.11.5-1), munge
+Conflicts: slurmctld
+Section: admin
+Priority: optional
+Homepage: http://slurm.schedmd.com
+Description: Slurm contoller daemon.
+ Used to manage the job queue, schedule jobs, and dispatch RPC messages to the
+ slurmd processon the compute nodes to launch jobs.
